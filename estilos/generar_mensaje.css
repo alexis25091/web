@@ -1,0 +1,69 @@
+.contenedor-mensaje {
+    max-width: 420px;
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 32px 28px 24px 28px;
+}
+
+.contenedor-mensaje h2 {
+    margin-top: 0;
+    color: var(--primary-100, #3a3a3a);
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.form-mensaje label {
+    display: block;
+    margin-bottom: 7px;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-mensaje select,
+.form-mensaje textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background: #fafafa;
+    resize: vertical;
+}
+
+.acciones-mensaje {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-cancelar {
+    background: #eee;
+    color: #333;
+    padding: 8px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.btn-cancelar:hover {
+    background: #ddd;
+}
+
+.btn-enviar {
+    background: var(--primary-100, #3a3a3a);
+    color: #fff;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-enviar:hover {
+    background: var(--primary-200, #222);
+}
