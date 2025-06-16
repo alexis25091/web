@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes</title>
+    <link type="text/css" rel="stylesheet" href="../estilos/template.css">
+    <link type="text/css" rel="stylesheet" href="../estilos/mensajes.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <a href="../recursosWeb/principal.php">
+            <img src="../imagenes/logo.png" alt="Logo de la empresa" class="logo">
+        </a>
+        <nav class="nav-links">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="publicarEmpleo.html">Publicar Empleo</a>
+            <a href="mensajes.html" class="activo">Mensajes</a>
+            <a href="notificaciones.html">Notificaciones</a>
+            <a href="" class="profile-icon" title="Ver perfil">
+                <img src="../imagenes/usuario.png" alt="usuario">
+            </a>
+        </nav>
+    </header>
+
+    <!-- el espacio de  los mensajes SIEMPRE visible -->
+    <aside class="mensajes-lateral" id="panel-mensajes">
+        <a href="../recursosWeb/principal.html" class="cerrar-mensajes" title="Cerrar">×</a>
+        <div class="encabezado-mensajes">
+            <h2>Tus Mensajes</h2>
+            <a href="generar_mensaje.html" class="btn-nuevo-mensaje">+ Nuevo mensaje</a>
+        </div>
+        <ul class="lista-mensajes">
+            <!-- aqui vamos a jalar los mensajes desde la base de datos -->
+        </ul>
+    </aside>
+
+</body>
+
+</html>

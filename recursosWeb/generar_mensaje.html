@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Mensaje</title>
+    <link type="text/css" rel="stylesheet" href="../estilos/template.css">
+    <link type="text/css" rel="stylesheet" href="../estilos/generar_mensaje.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <a href="../recursosWeb/principal.php">
+            <img src="../imagenes/logo.png" alt="Logo de la empresa" class="logo">
+        </a>
+        <nav class="nav-links">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="publicarEmpleo.html">Publicar Empleo</a>
+            <a href="mensajes.html">Mensajes</a>
+            <a href="notificaciones.html">Notificaciones</a>
+            <a href="" class="profile-icon" title="Ver perfil">
+                <img src="../imagenes/usuario.png" alt="usuario">
+            </a>
+        </nav>
+    </header>
+
+    <main class="contenedor-mensaje">
+        <h2>Enviar nuevo mensaje</h2>
+        <form action="#" method="post" class="form-mensaje">
+            <label for="destinatario">Destinatario:</label>
+            <select name="destinatario" id="destinatario" required>
+                <!--aqui vamos a terminar reeemplazando esto por alguna consulta con el php o alguna funcion-->
+                <option value="">Selecciona un usuario</option>
+                <option value="1">Juan Pérez</option>
+                <option value="2">Ana López</option>
+                <option value="3">Carlos Ruiz</option>
+
+            </select>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" rows="6" required placeholder="Escribe tu mensaje aquí..."></textarea>
+
+            <div class="acciones-mensaje">
+                <a href="mensajes.html" class="btn-cancelar">Cancelar</a>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

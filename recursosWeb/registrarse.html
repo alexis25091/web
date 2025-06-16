@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta</title>
+    <link type="text/css" rel="stylesheet" href="../estilos/template.css">
+    <link type="text/css" rel="stylesheet" href="../estilos/sesion.css">
+</head>
+
+<body class="register-body">
+    <div class="page-container">
+        <form class="page-form" action="../script/registrar.php" method="POST">
+            <a href="../index.html">
+                <img src="../imagenes/logo.png" alt="Logo de la empresa" class="logo">
+            </a>
+            <h2 class="form-title">Crear Cuenta</h2>
+            <input type="text" name="nombre" placeholder="Nombre completo" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <label for="user_type">Tipo de usuario</label>
+            <select id="user_type" name="user_type" required>
+                <option value="">Seleccione una opción</option>
+                <option value="candidato">Candidato</option>
+                <option value="empleador">Empleador</option>
+            </select>
+            <button type="submit">Registrarse</button>
+            <a href="iniciarSesion.php" class="page-link">¿Ya tienes cuenta? Inicia sesión</a>
+            <a href="../index.html" class="page-link page-link-volver"> ⬅ Volver</a>
+        </form>
+    </div>
+</body>
+
+</html>

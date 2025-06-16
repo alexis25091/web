@@ -1,0 +1,46 @@
+/* seccion de bienvenida  */
+.principal {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seccion-bienvenida {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 40px;
+  background-color: var(--bg-100);
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.texto-bienvenida {
+  max-width: 500px;
+  text-align: center;
+}
+
+.texto-bienvenida h1 {
+  margin-top: 0;
+  color: var(--primary-100);
+  font-size: 1.8rem;
+}
+
+.texto-bienvenida p {
+  font-size: 1rem;
+  color: var(--text-100);
+  line-height: 1.6;
+  text-align: justify;
+  text-align: center;
+}
+
