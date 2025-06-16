@@ -2,10 +2,12 @@
   --primary-100: #5DA399;
   --primary-200: #38618C;
   --accent-100: #090C9B;
-  --accent-200: #ccc;
+  --accent-200: #cccccc;
+  --accent-300: #757575;
   --text-100: #000000;
   --text-200: #FFFFFF;
   --bg-100: #FFFFFF;
+  --bg-200: #ebebeb;
 }
 
 /* Fondo y fuente principal */

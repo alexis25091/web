@@ -1,0 +1,52 @@
+.mensajes-lateral {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 350px;
+    height: calc(100% - 70px);
+    background: #fff;
+    border-left: 2px solid #e0e0e0;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.07);
+    padding: 30px 20px 20px 20px;
+    overflow-y: auto;
+    z-index: 100;
+}
+
+.cerrar-mensajes {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2em;
+    color: #888;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.encabezado-mensajes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;  
+    margin-bottom: 18px;
+}
+
+.encabezado-mensajes h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: var(--primary-100, #3a3a3a);
+}
+
+.btn-nuevo-mensaje {
+    padding: 7px 16px;
+    background: var(--primary-100, #3a3a3a);
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background 0.2s;
+    margin-left: 15px;
+}
+.btn-nuevo-mensaje:hover {
+    background: var(--primary-200, #222);
+}

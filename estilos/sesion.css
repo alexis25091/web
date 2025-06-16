@@ -39,7 +39,8 @@ html, body {
 }
 
 /* Cuadros del formulario */
-.page-form input {
+.page-form input,
+.page-form select {
   display: block;
   width: 100%;
   padding: 12px;
@@ -48,6 +49,16 @@ html, body {
   border-radius: 6px;
   font-size: 1rem;
   box-sizing: border-box; 
+  color: var(--accent-300);
+}
+
+/* Texto arriba de las opciones */
+.page-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--accent-300);
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 
 /* Botón de envío */
@@ -74,5 +85,34 @@ html, body {
 }
 
 .page-link-volver {
-  margin-top: 10px; /* Puedes ajustar la separación según tu preferencia */
+  margin-top: 10px;
 }
+
+
+/*Mensaje de error*/
+.error-msg {
+    background-color: #ffe0e0;
+    border: 1px solid #ff5e5e;
+    color: #b10000;
+    padding: 12px 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.success-msg {
+    background-color: #e0ffe0;
+    border: 1px solid #5ecc5e;
+    color: #2d7a2d;
+    padding: 12px 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
