@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensajes</title>
+    <title>Mensajes - Music & Talent</title>
     <link type="text/css" rel="stylesheet" href="../estilos/template.css">
     <link type="text/css" rel="stylesheet" href="../estilos/mensajes.css">
 </head>
 
-<body>
+<body onload="abrirVentana()">
     <!-- Header -->
     <header class="navbar">
         <a href="../recursosWeb/principal.php">
@@ -19,7 +19,7 @@
             <a href="nosotros.html">Nosotros</a>
             <a href="servicios.html">Servicios</a>
             <a href="publicarEmpleo.html">Publicar Empleo</a>
-            <a href="mensajes.html" class="activo">Mensajes</a>
+            <a href="mensajes.html" id="btnMensajes">Mensajes</a>
             <a href="notificaciones.html">Notificaciones</a>
             <a href="" class="profile-icon" title="Ver perfil">
                 <img src="../imagenes/usuario.png" alt="usuario">
@@ -27,18 +27,48 @@
         </nav>
     </header>
 
-    <!-- el espacio de  los mensajes SIEMPRE visible -->
-    <aside class="mensajes-lateral" id="panel-mensajes">
-        <a href="../recursosWeb/principal.html" class="cerrar-mensajes" title="Cerrar">×</a>
-        <div class="encabezado-mensajes">
-            <h2>Tus Mensajes</h2>
-            <a href="generar_mensaje.html" class="btn-nuevo-mensaje">+ Nuevo mensaje</a>
+    <main>
+        <div class="contenedor-principal">
+            <div class="mensaje-contenedor" id="ventanaMensajes">
+                <div class="mensaje-header">
+                    <h2>Mis mensajes</h2>
+                    <div>
+                        <button class="redactar-btn" onclick="abrirRedactor()">Redactar</button>
+                        <button class="cerrar-btn" onclick="cerrarVentana()">&times;</button>
+                    </div>
+                </div>
+                <div class="mensaje-body" id="contenidoMensajes">
+                    <!-- aqui va a usar la funcion para llamar cada mensaje desde la base de datos -->
+                </div>
+            </div>
         </div>
-        <ul class="lista-mensajes">
-            <!-- aqui vamos a jalar los mensajes desde la base de datos -->
-        </ul>
-    </aside>
+    </main>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-left">
+            <a href="../recursosWeb/principal.php">
+                <img src="../imagenes/logo.png" alt="Logo de la empresa" class="logo-footer">
+            </a>
+        </div>
+        <div class="footer-right">
+            <a href="../recursosWeb/terminosYCondiciones.html">Términos y condiciones</a>
+            <a href="../recursosWeb/politicas.html">Políticas</a>
+        </div>
+    </footer>
+
+    <script>
+        function abrirVentana() {
+            document.getElementById("ventanaMensajes").style.display = "block";
+        }
+        function cerrarVentana() {
+            document.getElementById("ventanaMensajes").style.display = "none";
+        }
+        function abrirRedactor() {
+            //aqui va ahacer que se abra la ventana de redacción de mensajes
+            window.location.href = "redactarMensaje.php";
+        }
+    </script>
 </body>
 
 </html>
