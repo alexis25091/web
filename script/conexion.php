@@ -13,7 +13,8 @@ class conexion{
 
             $conn= new PDO("sqlsrv:server=$host,$port;Database=$dbname",$username,$password);
             $conn -> setAttribute(PDO:: ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-            echo ("se conecto a la base de datos");
+//la linea de abajo del echo quitenle el que este comentada si lo necesitan para depurar y verificar que su vista funcione
+            //echo ("se conecto a la base de datos");
         }
         catch(PDOException $pe){
 
