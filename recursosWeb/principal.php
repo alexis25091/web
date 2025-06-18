@@ -8,12 +8,12 @@
     <link type="text/css" rel="stylesheet" href="../estilos/template.css">
     <link type="text/css" rel="stylesheet" href="../estilos/principal.css">
     <?php
-        session_start();
+    session_start();
 
-        if (!isset($_SESSION['usuario'])) {
-            header("Location: ../index.php");
-            exit();
-        }
+    if (!isset($_SESSION['usuario'])) {
+        header("Location: ../index.php");
+        exit();
+    }
     ?>
 
 </head>
@@ -28,7 +28,7 @@
             <a href="nosotros.html">Nosotros</a>
             <a href="servicios.html">Servicios</a>
             <a href="publicarEmpleo.html">Publicar Empleo</a>
-            <a href="mensajes.html">Mensajes</a>
+            <a href="mensajes.php">Mensajes</a>
             <a href="notificaciones.html">Notificaciones</a>
             <a href="" class="profile-icon" title="Ver perfil">
                 <img src="../imagenes/usuario.png" alt="usuario">
@@ -44,6 +44,7 @@
                 <h1>¡Bienvenido a Music & Talent!</h1>
                 <p>En esta página lograrás conocer a personas que pueden ayudarte a cumplir tus sueños al formar una
                     nueva banda.</p>
+
             </div>
         </div>
     </main>
