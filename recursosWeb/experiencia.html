@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia</title>
+    <link rel="stylesheet" href="../estilos/template.css">
+    <link rel="stylesheet" href="../estilos/experiencia.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="navbar">
+        <a href="../index.html">
+            <img src="../imagenes/logo.png" alt="Logo de la empresa" class="logo">
+        </a>
+        <nav class="nav-links">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="publicarEmpleo.html">Publicar Empleo</a>
+            <a href="mensajes.html">Mensajes</a>
+            <a href="iniciarSesion.html">Ingresar</a>
+            <a href="perfil.php" class="profile-icon" title="Ver perfil">
+                <img src="../imagenes/usuario.png" alt="usuario">
+            </a>
+        </nav>
+    </header>
+
+
+    <!-- Pantalla principal (va a cambiar) -->
+    <main>
+        <div class="container"></div>
+
+        <section>
+            <div class="titulo">
+                <h1>Experiencia</h1>
+            </div>
+
+            <form action="guardarExperiencia.php" method="POST">
+                <div class="compañia">
+                    <h2>Compañía:</h2>
+                    <input type="text" name="compania" placeholder="¿Cuál es el nombre de la empresa?" required>
+                </div>
+                <div class="puesto">
+                    <h2>Puesto:</h2>
+                    <input type="text" name="puesto" placeholder="¿Qué puesto tuviste?" required>
+                </div>
+                <div class="funcionesPrincipales">
+                    <h2>Funciones principales:</h2>
+                    <input type="text" name="funciones" placeholder="¿Qué desempeñaste?" required>
+                </div>
+                <div class="periodo">
+                    <h2>Periodo:</h2>
+                    <label>Inicio:</label>
+                    <input type="date" name="fecha_inicio" required>
+                    <label>Fin:</label>
+                    <input type="date" name="fecha_fin">
+                </div>
+                <div class="guardar">
+                    <button type="submit">Guardar experiencia</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <section class="footer-left">
+            <a href="../index.html">
+                <img src="../imagenes/logo.png" alt="Logo de la empresa" class="logo-footer">
+            </a>
+        </section>
+        <section class="footer-right">
+            <a href="#">Términos y condiciones</a>
+            <a href="#">Políticas</a>
+        </section>
+    </footer>
+
+</body>
+
+</html>
