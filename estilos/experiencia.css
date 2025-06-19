@@ -1,0 +1,54 @@
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: var(--bg-100);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo h1 {
+    text-align: center;
+    color: var(--primary-200);
+    margin-bottom: 30px;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+section h2 {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: var(--text-100);
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--accent-200);
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.agregar button,
+.editar button,
+.guardar button {
+    background-color: var(--primary-100);
+    color: var(--text-200);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.agregar button:hover,
+.editar button:hover,
+.guardar button:hover {
+    background-color: var(--accent-100);
+}
