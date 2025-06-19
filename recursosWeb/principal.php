@@ -30,7 +30,7 @@
             <a href="publicarEmpleo.html">Publicar Empleo</a>
             <a href="mensajes.php">Mensajes</a>
             <a href="notificaciones.html">Notificaciones</a>
-            <a href="" class="profile-icon" title="Ver perfil">
+            <a href="perfil.php" class="profile-icon" title="Ver perfil">
                 <img src="../imagenes/usuario.png" alt="usuario">
             </a>
         </nav>
