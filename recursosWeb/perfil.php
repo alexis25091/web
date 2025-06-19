@@ -6,7 +6,6 @@
     <title>Perfil</title>
     <link rel="stylesheet" href="../estilos/template.css">
     <link rel="stylesheet" href="../estilos/perfil.css">
-
 </head>
 <body>
 
@@ -39,7 +38,7 @@
         <a href="./experiencia.html" class="boton_opciones">
             <h2>Experiencia</h2>
         </a>
-        <a href="./habilidades.html" class="boton_opciones">
+        <a href="./habilidades.php" class="boton_opciones">
             <h2>Habilidades</h2>
         </a>
         <a href="./configuracion.html" class="boton_opciones">
@@ -48,8 +47,6 @@
         </section>
 
     </main>
-
-
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-left">
