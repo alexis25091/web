@@ -1,0 +1,53 @@
+.experiencias {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.experiencias h1 {
+    text-align: center;
+    color: var(--primary-100);
+    margin-bottom: 25px;
+}
+
+.tarjeta-experiencia {
+    background-color: var(--bg-100);
+    border: 1.5px solid var(--primary-100);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    color: var(--text-100);
+    transition: transform 0.2s ease-in-out;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
+}
+
+.tarjeta-experiencia h2 {
+    margin-top: 0;
+    color: var(--accent-100);
+}
+
+.experiencia-wrapper {
+    max-width: 1000px;
+    margin: 2px auto;
+    padding: 5px;
+}
+
+.titulo-exp {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--text-100);
+    margin-bottom: 20px;
+}
+
+.experiencias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
